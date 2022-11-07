@@ -74,7 +74,9 @@ module Pod
 
       # There has to be a single file in the Classes dir
       # or a framework won't be created, which is now default
-      `mv ./umf/ios/* Pod/Classes/`
+      `touch Pod/Classes/ReplaceMe.m`
+      
+      `mv ./ufm/ios/* Pod/Classes/`
 
       `mv ./templates/ios/* ./`
 
